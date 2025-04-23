@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.watersupplymanagementauthority.User7Goal5">
+    <children>
+        <Text layoutX="50.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee ID:" />
+        <Text layoutX="50.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Name:" />
+        <Text layoutX="50.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Designation:" />
+        <Text layoutX="50.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resignation Date:" />
+        <Text layoutX="50.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reason:" />
+        <Text layoutX="50.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status:" />
+
+        <TextField fx:id="employeeIdTextField" layoutX="200.0" layoutY="30.0" prefHeight="25.0" prefWidth="300.0" />
+        <TextField fx:id="employeeNameTextField" layoutX="200.0" layoutY="80.0" prefHeight="25.0" prefWidth="300.0" />
+        <TextField fx:id="designationTextField" layoutX="200.0" layoutY="130.0" prefHeight="25.0" prefWidth="300.0" />
+        <DatePicker fx:id="resignationDatePicker" layoutX="200.0" layoutY="180.0" prefWidth="300.0" />
+        <TextArea fx:id="reasonTextArea" layoutX="200.0" layoutY="230.0" prefHeight="60.0" prefWidth="300.0" />
+        <ComboBox fx:id="statusComboBox" layoutX="200.0" layoutY="300.0" prefWidth="300.0" />
+
+        <Button layoutX="350.0" layoutY="350.0" mnemonicParsing="false" onAction="#submitButtonOnClick" prefHeight="30.0" prefWidth="100.0" text="Submit" />
+
+        <TableView fx:id="resignationTableView" layoutX="50.0" layoutY="400.0" prefHeight="150.0" prefWidth="700.0">
+            <columns>
+                <TableColumn fx:id="idTableCol" prefWidth="100.0" text="Employee ID" />
+                <TableColumn fx:id="nameTableCol" prefWidth="150.0" text="Employee Name" />
+                <TableColumn fx:id="designationTableCol" prefWidth="120.0" text="Designation" />
+                <TableColumn fx:id="dateTableCol" prefWidth="120.0" text="Resignation Date" />
+                <TableColumn fx:id="reasonTableCol" prefWidth="150.0" text="Reason" />
+                <TableColumn fx:id="statusTableCol" prefWidth="100.0" text="Status" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
