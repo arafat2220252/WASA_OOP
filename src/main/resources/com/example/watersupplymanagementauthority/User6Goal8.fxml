@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="601.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.watersupplymanagementauthority.User6Goal8">
+   <children>
+      <Text layoutX="53.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Amount From Bills" wrappingWidth="117.56523895263672" />
+      <Text layoutX="46.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Amount From Fines" wrappingWidth="117.56523895263672" />
+      <Text layoutX="46.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Amount From Revenue" wrappingWidth="117.56523895263672" />
+      <Text layoutX="46.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Amount From Local Water Suppliers" wrappingWidth="117.56523895263672" />
+      <TextField fx:id="totalAmountBillTextField" layoutX="182.0" layoutY="29.0" prefHeight="25.0" prefWidth="194.0" />
+      <TextField fx:id="totalAmountFineTextField" layoutX="182.0" layoutY="94.0" prefHeight="25.0" prefWidth="194.0" />
+      <TextField fx:id="totalAmountRevenueTextField" layoutX="189.0" layoutY="166.0" prefHeight="25.0" prefWidth="194.0" />
+      <TextField fx:id="totalAmountWaterSuppliersLocalTExtField" layoutX="189.0" layoutY="242.0" prefHeight="25.0" prefWidth="194.0" />
+      <DatePicker fx:id="date" layoutX="199.0" layoutY="290.0" />
+      <Text layoutX="53.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="117.56523895263672" />
+      <Button layoutX="133.0" layoutY="337.0" mnemonicParsing="false" onAction="#calculateButton" prefHeight="25.0" prefWidth="74.0" text="Calculate" />
+      <Button layoutX="346.0" layoutY="349.0" mnemonicParsing="false" onAction="#downloadPDFButtton" prefHeight="25.0" prefWidth="118.0" text="Download PDF" />
+      <TextArea fx:id="resultTextArea" layoutX="30.0" layoutY="401.0" prefHeight="163.0" prefWidth="539.0" />
+   </children>
+</AnchorPane>

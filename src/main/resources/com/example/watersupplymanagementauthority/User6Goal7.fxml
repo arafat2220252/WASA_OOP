@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.watersupplymanagementauthority.User6Goal7">
+   <children>
+      <Text layoutX="40.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Type:" wrappingWidth="79.85094451904297" />
+      <Text layoutX="40.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment amount:" wrappingWidth="79.85094451904297" />
+      <Text layoutX="40.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment STatus:" wrappingWidth="79.85094451904297" />
+      <Text layoutX="47.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Due Date" wrappingWidth="79.85094451904297" />
+      <TextArea fx:id="paymentTypeTextArea" layoutX="127.0" layoutY="25.0" prefHeight="0.0" prefWidth="200.0" />
+      <TextArea fx:id="paymentAmountTextArea" layoutX="120.0" layoutY="73.0" prefHeight="0.0" prefWidth="200.0" />
+      <TextArea fx:id="paymentStatusTextArea" layoutX="120.0" layoutY="135.0" prefHeight="0.0" prefWidth="200.0" />
+      <DatePicker fx:id="dueDateDatePicker" layoutX="113.0" layoutY="196.0" />
+      <Button layoutX="434.0" layoutY="50.0" mnemonicParsing="false" onAction="#showMoreButtonOnClick" text="Show More" />
+   </children>
+</AnchorPane>

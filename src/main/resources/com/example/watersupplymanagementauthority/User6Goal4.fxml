@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="475.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.watersupplymanagementauthority.User6Goal4">
+   <children>
+      <Text layoutX="64.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee ID:" wrappingWidth="98.13671875" />
+      <Text layoutX="64.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Name:" wrappingWidth="98.13671875" />
+      <Text layoutX="64.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Designation:" wrappingWidth="98.13671875" />
+      <Text layoutX="64.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deduction For Income Tax:" wrappingWidth="98.13671875" />
+      <Text layoutX="64.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Housing Fare Allowance" wrappingWidth="98.13671875" />
+      <TextField fx:id="employeeNameTextField" layoutX="174.0" layoutY="63.0" prefHeight="25.0" prefWidth="253.0" />
+      <TextField fx:id="designationTextField" layoutX="174.0" layoutY="108.0" prefHeight="25.0" prefWidth="224.0" />
+      <TextField fx:id="employeeIDTextField" layoutX="174.0" layoutY="11.0" prefHeight="25.0" prefWidth="253.0" />
+      <Button fx:id="showButtonOnClick" layoutX="475.0" layoutY="210.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="81.0" text="Show" />
+      <TableView fx:id="user6Goal4TableView" layoutX="18.0" layoutY="261.0" prefHeight="200.0" prefWidth="673.0">
+        <columns>
+          <TableColumn fx:id="idTableCol" maxWidth="1079.9999809265137" minWidth="30.0" prefWidth="107.99999809265137" text="ID" />
+          <TableColumn fx:id="nameTableCol" maxWidth="982.8570556640625" minWidth="30.0" prefWidth="98.28570556640625" text="Name" />
+            <TableColumn fx:id="designationTableCol" maxWidth="982.8570556640625" minWidth="30.0" prefWidth="98.28570556640625" text="Designation" />
+            <TableColumn fx:id="incomeTaxTableCol" maxWidth="982.8570556640625" minWidth="30.0" prefWidth="98.28570556640625" text="Income Tax" />
+            <TableColumn fx:id="housingAllowanceTableCol" maxWidth="1194.2843627929688" minWidth="30.0" prefWidth="119.42843627929688" text="Housing Allowance" />
+            <TableColumn fx:id="totalSalaryTableCol" maxWidth="1497.142682756696" minWidth="30.0" prefWidth="149.7142682756696" text="Total salary" />
+        </columns>
+      </TableView>
+      <Text layoutX="355.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary:" wrappingWidth="54.7081298828125" />
+      <TextField fx:id="salaryTextField" layoutX="401.0" layoutY="152.0" />
+      <TextArea fx:id="housingFareTextArea" layoutX="162.0" layoutY="202.0" prefHeight="41.0" prefWidth="173.0" promptText="5000" />
+      <TextArea fx:id="IncomeTaxTextArea" layoutX="162.0" layoutY="143.0" prefHeight="41.0" prefWidth="182.0" promptText="15%(required)" />
+   </children>
+</AnchorPane>

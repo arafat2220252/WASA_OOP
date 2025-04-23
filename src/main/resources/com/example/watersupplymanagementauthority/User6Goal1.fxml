@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="461.0" prefWidth="872.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.watersupplymanagementauthority.User6Goal1">
+   <children>
+      <Text layoutX="38.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount of Total Bills:" wrappingWidth="118.13665008544922" />
+      <Text layoutX="38.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount From Govt:" wrappingWidth="118.13665008544922" />
+      <Text layoutX="38.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount From Revenue:" wrappingWidth="131.27953338623047" />
+      <Text layoutX="38.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount From Fine:" wrappingWidth="131.27953338623047" />
+      <TextField fx:id="totalBillsTextField" layoutX="156.0" layoutY="30.0" prefHeight="25.0" prefWidth="302.0" />
+      <TextField fx:id="amountFromGovtTextField" layoutX="155.0" layoutY="66.0" prefHeight="25.0" prefWidth="302.0" />
+      <TextField fx:id="amountRevenuetextField" layoutX="169.0" layoutY="99.0" prefHeight="25.0" prefWidth="290.0" />
+      <TextField fx:id="fineTextField" layoutX="168.0" layoutY="131.0" prefHeight="25.0" prefWidth="290.0" />
+      <Button layoutX="531.0" layoutY="108.0" mnemonicParsing="false" onAction="#showTotalIncomeButtonOnClick" prefHeight="25.0" prefWidth="142.0" text="Show Total InCome" />
+      <TableView fx:id="user6Goal1TableView" layoutX="17.0" layoutY="190.0" prefHeight="200.0" prefWidth="796.0">
+        <columns>
+          <TableColumn fx:id="totalBillTableCol" prefWidth="123.99993324279785" text="Amount of Total Bill" />
+          <TableColumn fx:id="amountFRomGovtTableTableCol" prefWidth="161.7143096923828" text="Amount From Govt" />
+            <TableColumn fx:id="amountFromRevenueTableCol" prefWidth="161.7143096923828" text="Amount From Revenue" />
+            <TableColumn fx:id="amountFromFineTableCol" prefWidth="166.2857666015625" text="Amount From Fine" />
+            <TableColumn fx:id="totalIncomeTableCol" prefWidth="180.0" text="Total Income" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.watersupplymanagementauthority.User5Goal2">
+   <children>
+      <Text layoutX="43.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Property Details:" wrappingWidth="86.953125" />
+      <Text layoutX="36.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connection Type:" wrappingWidth="117.23883056640625" />
+      <Text layoutX="39.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Installation Date:" wrappingWidth="94.95306396484375" />
+      <Text layoutX="43.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Name:" wrappingWidth="86.953125" />
+      <TextField fx:id="propertyDetailsTextField" layoutX="142.0" layoutY="29.0" prefHeight="25.0" prefWidth="282.0" />
+      <ComboBox fx:id="connectionTypeComboBox" layoutX="142.0" layoutY="66.0" prefWidth="150.0" />
+      <DatePicker fx:id="installationDateDatePicker" layoutX="135.0" layoutY="101.0" />
+      <TextField fx:id="customerNameTextField" layoutX="118.0" layoutY="142.0" prefHeight="25.0" prefWidth="282.0" />
+      <Button layoutX="256.0" layoutY="174.0" mnemonicParsing="false" onAction="#submitButtonOnClick" text="Submit" />
+      <TableView fx:id="user5Goal2TableView" layoutX="18.0" layoutY="207.0" prefHeight="168.0" prefWidth="557.0">
+        <columns>
+          <TableColumn fx:id="propertyDetailsTableCol" maxWidth="1148.570499420166" minWidth="30.0" prefWidth="114.8570499420166" text="Property Details" />
+          <TableColumn fx:id="connectionTypeTableCol" maxWidth="1011.429443359375" minWidth="30.0" prefWidth="101.1429443359375" text="Connection type" />
+            <TableColumn fx:id="installationDateTableCol" maxWidth="1377.1430969238281" minWidth="30.0" prefWidth="137.7143096923828" text="Installation Date" />
+            <TableColumn fx:id="customerNameTableCol" maxWidth="2011.428571428571" minWidth="30.0" prefWidth="201.1428571428571" text="Customer Name" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

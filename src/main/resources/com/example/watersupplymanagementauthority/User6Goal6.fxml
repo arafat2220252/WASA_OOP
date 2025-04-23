@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.watersupplymanagementauthority.User6Goal6">
+   <children>
+      <Text layoutX="45.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Acoount Holder Name:" wrappingWidth="100.42241668701172" />
+      <Text layoutX="45.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Acoount ID:" wrappingWidth="88.42247772216797" />
+      <Text layoutX="45.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount" wrappingWidth="74.70819091796875" />
+      <Text layoutX="45.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" wrappingWidth="74.70819091796875" />
+      <TextArea fx:id="accholderNametxtArea" layoutX="171.0" layoutY="22.0" prefHeight="9.0" prefWidth="200.0" />
+      <TextArea fx:id="accidtxtArea" layoutX="171.0" layoutY="76.0" prefHeight="9.0" prefWidth="200.0" />
+      <TextArea fx:id="amountTextArea" layoutX="171.0" layoutY="129.0" prefHeight="24.0" prefWidth="200.0" />
+      <TextArea fx:id="statusTextArea" layoutX="95.0" layoutY="198.0" prefHeight="38.0" prefWidth="119.0" />
+      <Button layoutX="125.0" layoutY="277.0" mnemonicParsing="false" onAction="#approveButton" text="approve" />
+      <Button layoutX="306.0" layoutY="277.0" mnemonicParsing="false" onAction="#rejectButon" text="reject" />
+      <Button layoutX="407.0" layoutY="28.0" mnemonicParsing="false" onAction="#showNextButton" text="show next" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="645.0" prefWidth="966.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.watersupplymanagementauthority.User6Goal2">
+   <children>
+      <Text layoutX="40.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount of expense in repairing purpose:" wrappingWidth="171.27959442138672" />
+      <Text layoutX="40.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount of expense in employee payment purpose:" wrappingWidth="171.27959442138672" />
+      <Text layoutX="40.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount of expense in needs purchase:" wrappingWidth="171.27959442138672" />
+      <Text layoutX="40.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount of expense in ongoing projects:" wrappingWidth="171.27959442138672" />
+      <Text layoutX="40.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Month:" wrappingWidth="171.27959442138672" />
+      <TextField fx:id="repairingPurposeTextField" layoutX="239.0" layoutY="24.0" prefHeight="34.0" prefWidth="278.0" />
+      <TextField fx:id="employeePaymentPurposeTextField" layoutX="239.0" layoutY="93.0" prefHeight="34.0" prefWidth="278.0" />
+      <TextField fx:id="needsPurchaseTextField" layoutX="239.0" layoutY="174.0" prefHeight="34.0" prefWidth="278.0" />
+      <TextField fx:id="ongoingTextField" layoutX="239.0" layoutY="249.0" prefHeight="34.0" prefWidth="278.0" />
+      <ComboBox fx:id="monthComboBox" layoutX="239.0" layoutY="315.0" prefWidth="150.0" />
+      <TableView fx:id="user6Goal2TableView" layoutX="9.0" layoutY="421.0" prefHeight="200.0" prefWidth="911.0">
+        <columns>
+          <TableColumn fx:id="repairingPurposeTableCol" prefWidth="175.42852306365967" text="expense in repairing purpose" />
+          <TableColumn fx:id="employeePaymentPurposeTableCol" prefWidth="182.28570556640625" text="employee payment purpose" />
+            <TableColumn fx:id="expenseinNeedPurposeTableCol" prefWidth="181.71426391601562" text="expense in needs purchase:" />
+            <TableColumn fx:id="expenseInOngoingProjectsTableCol" prefWidth="181.71426391601562" text="expense in ongoing projects:" />
+            <TableColumn fx:id="montTableCol" prefWidth="189.1428658621652" text="Month" />
+        </columns>
+      </TableView>
+      <Button layoutX="506.0" layoutY="328.0" mnemonicParsing="false" onAction="#showDetailsButtonOnClick" prefHeight="25.0" prefWidth="150.0" text="Show Details" />
+   </children>
+</AnchorPane>
