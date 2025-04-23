@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="588.0" prefWidth="825.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.watersupplymanagementauthority.User7Goal1">
+    <children>
+        <Text layoutX="31.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Name:" />
+        <Text layoutX="24.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee ID:" />
+        <Text layoutX="24.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Designation:" />
+        <Text layoutX="14.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Of Birth:" />
+        <Text layoutX="24.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:" />
+        <TextField fx:id="employeeNameTextField" layoutX="137.0" layoutY="14.0" prefHeight="25.0" prefWidth="196.0" />
+        <TextField fx:id="addressTextField" layoutX="130.0" layoutY="244.0" prefHeight="25.0" prefWidth="196.0" />
+        <TextField fx:id="designationTextField" layoutX="130.0" layoutY="151.0" prefHeight="25.0" prefWidth="196.0" />
+        <DatePicker fx:id="dobDatePicker" layoutX="130.0" layoutY="207.0" />
+        <TextArea fx:id="employeeIdTextArea" layoutX="117.0" layoutY="64.0" prefHeight="58.0" prefWidth="200.0" />
+        <TableView fx:id="user7Goal1TableView" layoutX="20.0" layoutY="331.0" prefHeight="200.0" prefWidth="795.0">
+            <columns>
+                <TableColumn fx:id="employeeNameTableCol" prefWidth="128.0" text="Employee Name" />
+                <TableColumn fx:id="employeeIdTableCol" prefWidth="131.0" text="Employee ID" />
+                <TableColumn fx:id="employeeDesignationTableCol" prefWidth="131.0" text="Designation" />
+                <TableColumn fx:id="dateOfBirthTableCol" prefWidth="131.0" text="Date Of Birth" />
+                <TableColumn fx:id="addressTableCol" prefWidth="135.0" text="Address" />
+                <TableColumn fx:id="idTableCol" prefWidth="135.0" text="ID" visible="false" />
+            </columns>
+        </TableView>
+        <Button layoutX="359.0" layoutY="294.0" mnemonicParsing="false" onAction="#addButtonOnClick" prefHeight="25.0" prefWidth="106.0" text="ADD" />
+    </children>
+</AnchorPane>

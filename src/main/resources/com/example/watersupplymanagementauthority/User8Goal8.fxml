@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.watersupplymanagementauthority.User8Goal8">
+    <children>
+        <Text layoutX="50.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sample ID:" />
+        <Text layoutX="50.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location:" />
+        <Text layoutX="50.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Collection Date:" />
+        <Text layoutX="50.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Collector Name:" />
+        <Text layoutX="50.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pH Level:" />
+        <Text layoutX="50.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Turbidity (NTU):" />
+        <Text layoutX="50.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chlorine (mg/L):" />
+        <Text layoutX="50.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contaminants:" />
+        <Text layoutX="50.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Test Results:" />
+        <Text layoutX="50.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status:" />
+
+        <TextField fx:id="sampleIdTextField" layoutX="200.0" layoutY="30.0" prefHeight="25.0" prefWidth="200.0" />
+        <ComboBox fx:id="locationComboBox" layoutX="200.0" layoutY="80.0" prefWidth="200.0" />
+        <DatePicker fx:id="collectionDatePicker" layoutX="200.0" layoutY="130.0" />
+        <TextField fx:id="collectorTextField" layoutX="200.0" layoutY="180.0" prefHeight="25.0" prefWidth="200.0" />
+        <TextField fx:id="phLevelTextField" layoutX="200.0" layoutY="230.0" prefHeight="25.0" prefWidth="200.0" />
+        <TextField fx:id="turbidityTextField" layoutX="200.0" layoutY="280.0" prefHeight="25.0" prefWidth="200.0" />
+        <TextField fx:id="chlorineTextField" layoutX="200.0" layoutY="330.0" prefHeight="25.0" prefWidth="200.0" />
+        <TextField fx:id="contaminantsTextField" layoutX="200.0" layoutY="380.0" prefHeight="25.0" prefWidth="200.0" />
+        <TextArea fx:id="resultsTextArea" layoutX="200.0" layoutY="430.0" prefHeight="40.0" prefWidth="400.0" />
+        <ComboBox fx:id="statusComboBox" layoutX="200.0" layoutY="490.0" prefWidth="200.0" />
+
+        <Button layoutX="250.0" layoutY="540.0" mnemonicParsing="false" onAction="#submitButtonOnClick" prefHeight="30.0" prefWidth="100.0" text="Submit" />
+        <Button layoutX="370.0" layoutY="540.0" mnemonicParsing="false" onAction="#approveButtonOnClick" prefHeight="30.0" prefWidth="100.0" text="Approve" />
+        <Button layoutX="490.0" layoutY="540.0" mnemonicParsing="false" onAction="#rejectButtonOnClick" prefHeight="30.0" prefWidth="100.0" text="Reject" />
+
+        <TableView fx:id="qualityTableView" layoutX="50.0" layoutY="590.0" prefHeight="150.0" prefWidth="700.0">
+            <columns>
+                <TableColumn fx:id="sampleIdTableCol" prefWidth="80.0" text="Sample ID" />
+                <TableColumn fx:id="locationTableCol" prefWidth="120.0" text="Location" />
+                <TableColumn fx:id="dateTableCol" prefWidth="100.0" text="Date" />
+                <TableColumn fx:id="phTableCol" prefWidth="70.0" text="pH Level" />
+                <TableColumn fx:id="turbidityTableCol" prefWidth="90.0" text="Turbidity" />
+                <TableColumn fx:id="chlorineTableCol" prefWidth="90.0" text="Chlorine" />
+                <TableColumn fx:id="statusTableCol" prefWidth="90.0" text="Status" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
